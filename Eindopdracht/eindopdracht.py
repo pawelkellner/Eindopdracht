@@ -29,6 +29,18 @@ def beginverhaal():
     elif answer0 == "B":
         verhaalstukje13()
 
+def verhaalstukje3():
+    os.system("cls")
+    print("Je loopt naar binnen en je wordt direct door de mensen binnen geholpen. Je krijgt eten, drinken en een plek waar je kan slapen. Na een half kom je een man tegen en jullie beginnen te praten waarom jullie hier zijn en waar jullie heen willen. Na een heel lang gesprek eindigt de man het gesprek met een heel raar vraag 'Zou je ooit ISIS vergeven voor wat ze doen, als ze de oorlog zouden stoppen'")
+    print("\n\n\n\Wat wil je zeggen?\n A: 'Nee, je kan nooit vergeven wat ze iedereen aan doen'\n B: 'Ja, want iedereen maakt fouten'")
+    answer3 = input()
+
+    if answer3 == "A":
+        verhaalstukje11()
+    elif answer3 == "B":
+        verhaalstukje17()
+    
+    
 def verhaalstukje5():
     os.system("cls")
     print("Je hebt gekozen ervoor om zich over te geven en met de terroristen mee te helpen want anders gaan ze je dood maken")
@@ -40,8 +52,23 @@ def verhaalstukje7():
     Enterknop()
     Einde2()
 
-def verhaalstukje12():
+def verhaalstukje11():
+    os.system("cls")
+    print("De man loop weg zonder wat te zeggen, maar jij denkt er niks van want je bent heel moe en je wilt hier zo snel mogelijk weg.")
+    Enternknop()
+    Einde2()
     
+def verhaalstukje12():
+    os.system("cls")
+    print("Je hebt gekozen om de volgende dag naar de smokkelaar te gaan. Je pakt al je spullen en je hebt een map van Hamza gekregen waar je naar toe moet gaan. Op de map zijn plekken gemarkeerd waar je kan overnachten, na een hele dag lopen zie je een plek waar je kan slapen maar hij is niet gemarkeerd op de map en de volgende is 2 uur verder.")
+    print("\n\n\nWat ga je doen?\n A: Je loopt naar de volgende slaap plek\n B: Je blijft hier slapen")
+
+    answer12 = input()
+
+    if answer12 == "A":
+        verhaalstukje6()
+    elif answer12 == "B":
+        verhaalstukje3()
 
 def verhaalstukje13():
     os.system("cls")
@@ -53,6 +80,12 @@ def verhaalstukje13():
         verhaalstukje5()
     elif answer13 == "B":
         verhaalstukje19()
+
+def verhaalstukje17():
+    os.system("cls")
+    print("De man loop weg zonder wat te zeggen, maar jij denkt er niks van want je bent heel moe en je wilt hier zo snel mogelijk weg.")
+    Enterknop()
+    Einde2()
 
 def verhaalstukje19():
     os.system("cls")
@@ -89,13 +122,13 @@ def verhaalstukje19():
 def Einde1():
     os.system("cls")
     print("                  EINDE")
-    print("Je bent een van de terroristen geworden en nu kan je niet meer terug naar je famillie. Enige wat je kan doen is je famillie vergeten en een slechte leven hebben")
+    print("Je bent een lid van ISIS geworden en nu kan je niet meer terug naar je famillie. Enige wat je kan doen is je famillie vergeten en een slechte leven hebben")
     Enterknop()
 
 def Einde2():
     os.system("cls")
     print("                  EINDE")
-    print("Je bent vermoordt in je slaap. Het persoon waar mee je had afgesproken was een ISIS lid, hij had contact opgenomen met anderen die jou en Hamza hadden vermoord.")
+    print("Je bent vermoordt in je slaap.")
     Enterknop()
 
 ## Start spel / inleiding
