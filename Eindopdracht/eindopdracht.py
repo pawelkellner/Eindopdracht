@@ -1,6 +1,10 @@
 import os, time
 
-#def verhaalstukje01():
+loader = 0
+
+def beginverhaal():
+    print("xd")
+
 
 gameRunning = True
 
@@ -15,8 +19,23 @@ print("\n\n\nAls je wilt beginnen klick op 'ENTER'!")
 answer0 = input()
 
 if answer0 == "":
-    print("DD")
+    print("XD")
+    os.system("clear")
+
+    
+while loader < 5:
+    print("Aan het laden.")
+    time.sleep(0.5)
+    os.system("clear")
+    print("Aan het laden..")
+    time.sleep(0.5)
+    os.system("clear")
+    print("Aan het laden...")
+    time.sleep(0.5)
+    os.system("clear")
+    loader = loader + 1
 
 os.system("clear")
 
 #while gameRunning == True:
+    
